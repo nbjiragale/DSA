@@ -1,0 +1,21 @@
+package day2;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+		System.out.println("Which number u want to get factorial of? ");
+		int n=scanner.nextInt();
+		int fact=1;
+		scanner.close();
+		
+		for(int i=n;i>=1;i--) {
+			fact=fact*i;
+		}
+		System.out.println(fact);
+
+	}
+
+}
